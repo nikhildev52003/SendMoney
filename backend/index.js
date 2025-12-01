@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import { router } from "./router/user.js";
 import { routerr } from "./router/account.js";
-const PORT = 1000;
+const PORT = process.env.PORT || 1000;
 const corsOptions = {
   origin: "http://localhost:5173",
   methods: "GET,POST,PUT,DELETE",
@@ -21,5 +21,5 @@ app.use("/api/v1/user", router);
 app.use("/api/v1/account", routerr);
 
 app.listen(PORT, () => {
-  console.log("server started at ", PORT);
+  console.log("Server started on port", PORT);
 });
