@@ -1,4 +1,4 @@
-import { Heading } from "../components/heading";
+import { Heading } from "../components/Heading.jsx";
 import { SubHeading } from "../components/Subheading";
 import { InputBox } from "../components/Inputbox";
 import { Button } from "../components/Button";
