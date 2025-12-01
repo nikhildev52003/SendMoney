@@ -1,0 +1,1 @@
+export const USER_BACKEND_URL = import.meta.env.VITE_USER_BACKEND_URL;
