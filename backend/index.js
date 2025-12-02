@@ -20,7 +20,6 @@ app.options("*", cors(corsOptions));
 app.use(cors(corsOptions));
 app.use(express.json());
 
-
 db(process.env.MONGO_URL);
 
 app.use("/api/v1/user", router);
